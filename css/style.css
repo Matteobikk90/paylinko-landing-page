@@ -1,0 +1,150 @@
+body {
+	height: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: 40px;
+    color: #9B9B9B;
+    font-size: 15px;
+}
+
+.navbar-brand {
+    float: left;
+    height: auto;
+    padding: 0;
+    line-height: 0;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    background-color: transparent;
+}
+
+	.navbar-default .navbar-nav {
+		text-align: center;
+	}
+
+		.navbar-default .navbar-nav a {
+			color: #2F87E7;
+		    height: 46px;
+		    line-height: 46px;
+		    padding: 0;
+		    margin-right: 30px;
+		}
+
+			.navbar-default .navbar-nav li:last-child a {
+				color: #2F87E7;
+				border-radius: 25px;
+				border: 1px solid #2F87E7;
+			    width: 123px;
+			    margin: 0 auto;
+			    margin-right: 0;
+			}
+
+.homepage .row .col-lg-8 h1 {
+	font-size: 42px;
+	color: black;
+	margin-top: 150px;
+}
+
+.homepage .row .col-lg-8 h3 {
+	font-size: 18px;
+	color: #9B9B9B;
+	margin: 20px 0 40px 0;
+}
+
+.homepage .row .col-lg-8 input{
+    width: 273px;
+    height: 50px;
+    border-color: #90EA37;
+    border-radius: 25px;
+	background: #FFFFFF;
+	border: 2px solid #F0F0F0;
+	box-shadow: 0 30px 50px 0 rgba(0,0,0,0.08);
+	padding-left: 20px;
+	margin-right: 15px;
+	margin-left: -2px;
+}
+
+.homepage .row .col-lg-8 input.btn-success {
+    color: #fff;
+    background-color: #90EA37;
+    width: 157px;
+    height: 50px;
+    border-color: #90EA37;
+    border-radius: 25px;
+}
+
+.homepage .row .col-lg-8 h4 {
+	font-size: 15px;
+	color: #9B9B9B;
+	margin: 45px 0 20px 0;
+}
+
+.homepage .row .col-lg-8 img {
+	display: block;
+	margin-top: 15px;
+}
+
+.homepage .row .col-lg-4 img {
+    float: right;
+    margin-top: 80px;
+    margin-left: -2px;
+}
+
+.blue-banner {
+	background-color: #0FBEFF;
+}
+
+.blue-banner .row .col-lg-4 {
+	padding: 24px 0;
+}
+
+.blue-banner .row .col-lg-4 span:last-child {
+	display: inline-block;
+    width: 136px;
+    text-align: left;
+    vertical-align: middle;
+    margin-left: 15px;
+    color: white;
+}
+
+.video video {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
