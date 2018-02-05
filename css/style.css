@@ -257,6 +257,286 @@ body {
     vertical-align: text-bottom;
 }
 
+.pictures {
+	margin-bottom: 100px;
+}
+
+.pictures .row h1 {
+	font-size: 36px;
+	color: #0FBEFF;
+	letter-spacing: 0.25px;
+	line-height: 50px;
+    margin: 30px 0;
+}
+
+.pictures .row .col-lg-4 {
+	margin: 12px 0;
+}
+
+.pictures .row .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.pictures .row .hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(460px, -100px) rotate(180deg);
+  -ms-transform: translate(460px, -100px) rotate(180deg);
+  transform: translate(460px, -100px) rotate(180deg);
+  -webkit-transition: all 0.2s 0.4s ease-in-out;
+  transition: all 0.2s 0.4s ease-in-out;
+}
+
+.pictures .row .hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.pictures .row .hovereffect h2 {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.pictures .row .hovereffect p.info {
+  font-size: 12px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  color: #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+  -webkit-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+ .pictures .row .hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.pictures .row .hovereffect:hover h2 {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.pictures .row .hovereffect:hover p.info {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.get-in-now {
+	padding: 35px 0;
+	background: #0BBBFE; 
+}
+
+.get-in-now h1 {
+	font-size: 36px;
+	color: #FFFFFF;
+	letter-spacing: 0.5px;
+	line-height: 41px;
+    margin: 8px 0 22px;
+}
+
+.get-in-now p {
+	font-size: 14px;
+	color: #000000;
+	letter-spacing: 0.5px;
+}
+
+.get-in-now a {
+	display: inline-block;
+	margin: 20px 10px;
+}
+
+.contact-form {
+	background-image: url("../images/maps.png");
+	background-size: cover;
+	background-position: center;
+	height: 450px;
+	margin-bottom: 150px;
+	position: relative;
+}
+
+.contact-form form {
+	background: #FFFFFF;
+	box-shadow: 0 15px 20px 0 rgba(4,21,46,0.10);
+	border-radius: 3px;
+    width: 80%;
+    height: 440px;
+    margin: 0 auto;
+    margin-top: 160px;
+    padding: 45px 60px;
+}
+
+.contact-form form h1 {
+	margin: 0;
+	font-size: 52px;
+	columns: black;
+}
+
+.contact-form form address {
+	margin-top: 25px;
+}
+
+.contact-form form .title-label {
+	color: #939DA7;
+	font-size: 15px;
+}
+
+.contact-form form .contact-description {
+	color: black;
+	font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-form form label, .contact-form form input, .contact-form form textarea {
+	display: block;
+	background: #FFFFFF;
+	width: 100%;
+}
+
+/*.contact-form form label {
+	padding-top: 40px;
+}*/
+
+.contact-form form input {
+	height: 50px;
+}
+
+.contact-form form input, .contact-form form textarea {
+	display: block;
+	background: #FFFFFF;
+	border: 1px solid #E1E7EC;
+	border-radius: 3px;
+	margin: 15px 0;
+	padding-left: 15px;
+}
+
+.contact-form form textarea {
+	padding-top: 15px;
+}
+
+.contact-form form input[type="submit"] {
+	color: #fff;
+    background-color: #90EA37;
+    width: 157px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 35px;
+    border-color: #90EA37;
+    border-radius: 100px;
+}
+
+.getting-started {
+	background: #0FBEFF;
+	padding: 70px 50px;
+	color: white;
+}
+
+.getting-started h1 {
+	font-size: 36px;
+}
+
+.getting-started p {
+	font-size: 18px;
+}
+
+.getting-started .row .col-lg-6 form {
+	background: #FFFFFF;
+	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.20);
+	border-radius: 444px;
+    overflow: hidden;
+    margin-top: 25px;
+    height: 60px;
+    padding: 4px;
+    width: 441px;
+}
+
+.getting-started .row .col-lg-6 form input[type="email"] {
+	font-size: 16px;
+	color: #A5ADBA;
+	letter-spacing: 0;
+	border-radius: 444px;
+    border: 0;
+    padding: 15px 0 14px 20px;
+    display: inline-block;
+    outline: none;
+    float: left;
+}
+
+.getting-started .row .col-lg-6 form input[type="submit"] {
+	background: #7ED321;
+	border-radius: 444px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+    padding: 14px;
+    display: inline-block;
+    outline: none;
+    float: left;
+    position: relative;
+    left: 49px;
+    font-size: 16px;
+}
+
+/* Rectangle 8: */
+background: #7ED321;
+border-radius: 444px;
+/* Start Accepting Card: */
+font-family: .AppleSystemUIFont;
+font-size: 16px;
+color: #FFFFFF;
+letter-spacing: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
