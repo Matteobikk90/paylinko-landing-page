@@ -577,13 +577,14 @@ a, input, select, label {
 	border-radius: 444px;
 	color: #FFFFFF;
 	letter-spacing: 0;
-    padding: 14px;
+    padding: 15px;
     display: inline-block;
     outline: none;
     float: left;
     position: relative;
     left: 62px;
     font-size: 16px;
+    border: 0;
 }
 
 	.getting-started .row .col-lg-6 form input[type="submit"]:hover {
