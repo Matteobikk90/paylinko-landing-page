@@ -8,7 +8,8 @@
 
 	<!-- Css -->
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="./css/hamburger.css">
 	<link rel="shortcut icon" type="image/png" href="./images/logo.png"/>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
@@ -23,14 +24,13 @@
 		
 		<!-- Navbar -->
 		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
+		  <div class="container">
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
+		        <button class="hamburger hamburger--collapse" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" type="button">
+				  <span class="hamburger-box">
+				    <span class="hamburger-inner"></span>
+				  </span>
+				</button>
 		      <a class="navbar-brand" href="#">
 				<img src="./images/logo.png" alt="Paylinko Logo" title="Paylinko Logo">
 		      </a>
@@ -69,7 +69,7 @@
 
 		<section class="blue-banner">
 			<div class="row">
-				<div class="col-lg-4 text-center">
+				<div class="col-lg-4 col-md-4 col-sm-4 text-center">
 					<span>
 						<img src="./images/england-icon.png" alt="English Icon" title="Engish-Icon" width="52" height="52">
 					</span>
@@ -77,7 +77,7 @@
 					      United Kingdom
 				  	</span>
 				</div>
-				<div class="col-lg-4 text-center">
+				<div class="col-lg-4 col-md-4 col-sm-4 text-center">
 					<span>
 						<img src="./images/shield-icon.png" alt="Shield Icon" title="Shield-Icon" width="52" height="52">
 					</span>
@@ -85,7 +85,7 @@
 					      Verified and Secured
 				  	</span>
 				</div>
-				<div class="col-lg-4 text-center">
+				<div class="col-lg-4 col-md-4 col-sm-4 text-center">
 					<span>
 						<img src="./images/oval-icon.png" alt="Oval Icon" title="Oval-Icon" width="52" height="52">
 					</span>
@@ -97,19 +97,15 @@
 		</section>
 
 		<section class="video">
-			<video poster="./images/video-poster.png">
-			  <source src="movie.mp4" type="video/mp4">
-			  <source src="movie.ogg" type="video/ogg">
-			  Your browser does not support the video tag.
-			</video>
+			<iframe width="100%" src="https://www.youtube.com/embed/oWdEL25iEN8?autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
 		</section>
 
 		<section class="stocks container">
 			<div class="row">
-				<div class="col-lg-5 text-center">
+				<div class="col-lg-5 col-md-5 text-center">
 					<img src="./images/stock.png" alt="Stocks Image" title="Stocks Image">
 				</div>
-				<div class="col-lg-7">
+				<div class="col-lg-7 col-md-7">
 					<h1>All your customer payments <br />
 						in one place
 					</h1>
@@ -120,39 +116,41 @@
 		</section> 
 
 		<section class="green-invoices">
-			<div class="row">
-				<div class="col-lg-6 text-center">
-					<img src="./images/app.png" alt="App Image" title="App Image">
-				</div>
-				<div class="col-lg-6">
-					<h1>
-						Create invoices, <br /> 
-						instantly, on the move
-					</h1>
-					<p>
-						We believe that payments is a problem rooted in code, not finance. We obsessively seek out elegant, composable abstractions that enable robust
-					</p>
-					<p>Download the app:</p>
-					<a href="">
-						<img src="./images/G.png" alt="Google Play" title="Google Play">
-					</a>
-					<a href="">
-						<img src="./images/Rectangle.png" alt="Apple Store" title="Apple Store"
-					</a>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 text-center">
+						<img src="./images/app.png" alt="App Image" title="App Image">
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<h1>
+							Create invoices, <br /> 
+							instantly, on the move
+						</h1>
+						<p>
+							We believe that payments is a problem rooted in code, not finance. We obsessively seek out elegant, composable abstractions that enable robust
+						</p>
+						<p>Download the app:</p>
+						<a href="">
+							<img src="./images/Rectangle.png" alt="Google Play" title="Google Play">
+						</a>
+						<a href="">
+							<img src="./images/Rectangle.png" alt="Apple Store" title="Apple Store">
+						</a>
+					</div>
 				</div>
 			</div>
 		</section> 
 
 		<section class="secured-money container">
 			<div class="row">
-				<div class="col-lg-7">
+				<div class="col-lg-7 col-md-7">
 					<h1>Always know <br />
 						where the money is
 					</h1>
 					<p>We believe that payments is a problem rooted in code, not finance. We obsessively seek out elegant, composable abstractions that enable robust, scalable</p>
 					<a href="" class="btn btn-warning">Get Started</a>
 				</div>
-				<div class="col-lg-5 text-center">
+				<div class="col-lg-5 col-md-5 text-center">
 					<img src="./images/protect.png" alt="Stocks Image" title="Stocks Image">
 				</div>
 			</div>
@@ -267,7 +265,7 @@
 				<img src="./images/App-Store.png" alt="App Store Icon" title="App Store Icon">
 			</a>
 			<a href="">
-				<img src="./images/Play-Store.png" alt="Play-Store Icon" title="Play-Store Icon"
+				<img src="./images/Play-Store.png" alt="Play-Store Icon" title="Play-Store Icon">
 			</a>
 		</section>
 
@@ -316,11 +314,11 @@
 		<section class="getting-started">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-6">
 						<h1>Getting started is easy!</h1>
 						<p>Up and running in minutes with a free account.</p>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-6">
 						<form action="post">
 							<input type="email" placeholder="Your email address">
 							<input type="submit" value="Start Accepting Cards">

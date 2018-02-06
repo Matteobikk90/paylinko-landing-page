@@ -1,27 +1,48 @@
 body {
 	height: 100%;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
 }
 
 .container-fluid {
 	padding: 0;
 }
 
+.row {
+	margin: 0;
+}
+
+a, input, select, label {
+	outline: none;
+}
+
+.hamburger--collapse {
+	float: right;
+	outline: none;
+	margin-top: -5px;
+}
+
+	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+		background-color: #2F87E7;
+	}
+
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
     color: #9B9B9B;
     font-size: 15px;
-    width: 1100px;
-    margin: 0 auto;
     margin-top: 40px;
 }
 
 .navbar-brand {
     float: left;
     height: auto;
-    padding: 0;
+    padding: 0 15px;
     line-height: 0;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: 0;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
@@ -49,6 +70,16 @@ body {
 			    margin-right: 0;
 			}
 
+				.navbar-default .navbar-nav li:last-child a:hover {
+					-webkit-box-shadow: 1px 1px 5px 0px rgba(47,135,231,1);
+					-moz-box-shadow: 1px 1px 5px 0px rgba(47,135,231,1);
+					box-shadow: 1px 1px 5px 0px rgba(47,135,231,1);
+				}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: #2F87E7;
+}
+
 .homepage .row .col-lg-8 h1 {
 	font-size: 42px;
 	color: black;
@@ -64,26 +95,39 @@ body {
 .homepage .row .col-lg-8 input{
     width: 273px;
     height: 50px;
-    border-color: #90EA37;
+    border-color: #7ED321;
     border-radius: 25px;
 	background: #FFFFFF;
 	border: 2px solid #F0F0F0;
+	-webkit-box-shadow: 0 30px 50px 0 rgba(0,0,0,0.08);
+	-moz-box-shadow: 0 30px 50px 0 rgba(0,0,0,0.08);
 	box-shadow: 0 30px 50px 0 rgba(0,0,0,0.08);
 	padding-left: 20px;
 	margin-right: 15px;
 	margin-left: -2px;
 }
 
+	.homepage .row .col-lg-8 input:focus {
+		-webkit-box-shadow: 0 20px 50px 0 rgba(0,0,0,0.08);
+		-moz-box-shadow: 0 20px 50px 0 rgba(0,0,0,0.08);
+		box-shadow: 0 20px 50px 0 rgba(0,0,0,0.08);
+	}
+
 .homepage .row .col-lg-8 a.btn-success {
     color: #fff;
-    background-color: #90EA37;
+    background-color: #7ED321;
     width: 157px;
     height: 50px;
     font-size: 18px;
     line-height: 35px;
-    border-color: #90EA37;
+    border-color: #7ED321;
     border-radius: 100px;
 }
+
+	.homepage .row .col-lg-8 a.btn-success:hover {
+	    background-color: #7bec0a;
+	    border-color: #7bec0a;
+	}
 
 .homepage .row .col-lg-8 h4 {
 	font-size: 15px;
@@ -120,7 +164,16 @@ body {
     color: white;
 }
 
-.video video {
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 }
@@ -130,7 +183,7 @@ body {
 }
 
 .stocks .row .col-lg-7 h1 {
-	font-size: 50px;
+	font-size: 42px;
 	color: black;
 	margin-top: 90px;
     line-height: 60px;
@@ -148,6 +201,7 @@ body {
     width: 157px;
     height: 50px;
 	background: #FFD835;
+	border: 1px solid #FFD835;
 	border-radius: 100px;
 	font-size: 18px;
 	color: #242E38;
@@ -155,6 +209,12 @@ body {
 	line-height: 35px;
 	margin-bottom: 100px;
 }
+
+	.stocks .row .col-lg-7 a.btn-warning:hover { 
+		background: #ffc107;
+		color: #242E38;
+		border: 1px solid #ffc107;
+	}
 
 .green-invoices {
 	background: #7ED321;
@@ -165,7 +225,7 @@ body {
 }
 
 .green-invoices .row .col-lg-6 h1 {
-	font-size: 50px;
+	font-size: 42px;
 	color: #FFFFFF;
 	line-height: 60px;
 	margin-top: 90px;
@@ -191,7 +251,7 @@ body {
 }
 
 .secured-money .row .col-lg-7 h1 {
-	font-size: 50px;
+	font-size: 42px;
 	color: #000000;
 	line-height: 60px;
 	margin-top: 90px;
@@ -209,12 +269,19 @@ body {
     width: 157px;
     height: 50px;
 	background: #FFD835;
+	border: 1px solid #FFD835;
 	border-radius: 100px;
 	font-size: 18px;
 	color: #242E38;
 	letter-spacing: 0;
 	line-height: 35px;
 	margin-bottom: 100px;
+}
+
+	.secured-money .row .col-lg-7 a.btn-warning:hover { 
+		background: #ffc107;
+		color: #242E38;
+		border: 1px solid #ffc107;
 }
 
 .secured-money .row .col-lg-5 img {
@@ -237,9 +304,9 @@ body {
 	margin-bottom: 20px;
 }
 
-.reviews #myCarousel .item img {
+.reviews #myCarousel .carousel-inner {
     margin: 0 auto;
-    max-width: 750px;
+    max-width: 760px;
 }
 
 .reviews #myCarousel .carousel-control {
@@ -317,7 +384,7 @@ body {
 }
 
 .pictures .row .hovereffect p.info {
-  font-size: 12px;
+  font-size: 14px;
   display: inline-block;
   text-decoration: none;
   padding: 7px 14px;
@@ -403,8 +470,8 @@ body {
 
 .contact-form form h1 {
 	margin: 0;
-	font-size: 52px;
-	columns: black;
+	font-size: 42px;
+	color: black;
 }
 
 .contact-form form address {
@@ -427,6 +494,7 @@ body {
 	display: block;
 	background: #FFFFFF;
 	width: 100%;
+	color: black;
 }
 
 /*.contact-form form label {
@@ -452,14 +520,19 @@ body {
 
 .contact-form form input[type="submit"] {
 	color: #fff;
-    background-color: #90EA37;
+    background-color: #7ED321;
     width: 157px;
     height: 50px;
     font-size: 18px;
     line-height: 35px;
-    border-color: #90EA37;
+    border-color: #7ED321;
     border-radius: 100px;
 }
+
+	.contact-form form input[type="submit"]:hover {
+		background-color: #7bec0a;
+		border-color: #7bec0a;
+	}
 
 .getting-started {
 	background: #0FBEFF;
@@ -508,30 +581,163 @@ body {
     outline: none;
     float: left;
     position: relative;
-    left: 49px;
+    left: 62px;
     font-size: 16px;
 }
 
-/* Rectangle 8: */
-background: #7ED321;
-border-radius: 444px;
-/* Start Accepting Card: */
-font-family: .AppleSystemUIFont;
-font-size: 16px;
-color: #FFFFFF;
-letter-spacing: 0;
+	.getting-started .row .col-lg-6 form input[type="submit"]:hover {
+	    background-color: #7bec0a;
+	    border-color: #7bec0a;
+	}
 
 
 
 
 
 
+/* Media Queries */
+
+@media (max-width: 1200px) {
+	.homepage .row .col-lg-8 h1 {
+	    margin-top: 75px;
+	}
+
+	.homepage .row .col-lg-4 img {
+	    float: none;
+	    margin: 0 auto;
+	    margin-top: 80px;
+	    display: block;
+	}
+
+	.blue-banner {
+	    margin-top: 0;
+	}
+
+	.contact-form {
+	    margin-top: -150px;
+	    margin-bottom: 0;
+	    height: auto;
+	}
+	
+	.contact-form form {
+	    height: auto;
+	    margin-bottom: 0;
+	}
+
+}
+
+@media (max-width: 992px) {
+	.stocks .row .col-lg-5 img, .secured-money .row .col-lg-5 img, .secured-money .row .col-lg-7 h1 {
+	    margin-top: 50px;
+	}
+
+	.stocks .row .col-lg-7 h1, .green-invoices .row .col-lg-6 h1, .secured-money .row .col-lg-7 h1 {
+	    font-size: 30px;
+	}
+	
+	.stocks .row .col-lg-7 p, .green-invoices .row .col-lg-6 p, .secured-money .row .col-lg-7 p {
+	    font-size: 18px;
+	}
+
+	.secured-money .row .col-lg-5 img {
+		margin-bottom: 50px;
+	}
+
+	.secured-money .row .col-lg-7 a.btn-warning {
+	    margin-bottom: 0;
+	}
+
+	.green-invoices .row .col-lg-6 a {
+	    margin-bottom: 50px;
+	}
+
+	.getting-started .row .col-lg-6 form {
+	    width: auto;
+	    height: auto;
+	    border-radius: 0;
+	}
+
+	.getting-started .row .col-lg-6 form input[type="submit"] {
+	    float: right;
+	    left: 0;
+	}
+
+	.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+	    top: 125%;
+	}
+
+}
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav a, .navbar-default .navbar-nav li:last-child a {
+	    margin: 0 auto;
+	}	
+
+	.homepage .row .col-lg-8 h1 {
+	    font-size: 30px;
+	}
+
+	.homepage .row .col-lg-8 h3 {
+	    font-size: 15px;
+	}
+
+	.homepage .row .col-lg-8 a.btn-success {
+	    margin-top: 20px;
+	}
+
+	.green-invoices .row .col-lg-6 img {
+	    max-width: 300px;
+	}
+
+	.contact-form form {
+	    width: 100%;
+	}
+
+	.getting-started {
+	    padding: 70px 0;
+	}
+
+	.getting-started .row .col-lg-6 form {
+	    width: auto;
+	    height: auto;
+	    border-radius: 0;
+	    text-align: center;
+	}
+
+	.getting-started .row .col-lg-6 form input[type="email"] {
+	    float: none;
+	}
+
+	.getting-started .row .col-lg-6 form input[type="submit"] {
+	    float: none;
+	    left: 0;
+	    display: block;
+	    margin: 0 auto;
+	}
+
+	.reviews h1 {
+	    padding: 30px 0;
+	}
+
+	.pictures .row img {
+	  width: 100%;
+	}
+
+	.pictures .row .hovereffect h2 {
+	    font-size: 24px;
+	}
 
 
 
+}
 
-
-
+@media (max-width: 475px) {
+	.green-invoices .row .col-lg-6 a {
+	    display: block;
+	    text-align: center;
+	    margin-bottom: 15px;
+	}
+}
 
 
 
