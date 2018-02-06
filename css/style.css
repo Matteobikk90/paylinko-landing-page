@@ -20,6 +20,7 @@ a, input, select, label {
 	float: right;
 	outline: none;
 	margin-top: -5px;
+	display: none;
 }
 
 	.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
@@ -669,6 +670,9 @@ a, input, select, label {
 }
 
 @media (max-width: 767px) {
+	.hamburger--collapse {
+		display: block;
+	}
 	.navbar-default .navbar-nav a, .navbar-default .navbar-nav li:last-child a {
 	    margin: 0 auto;
 	}	
