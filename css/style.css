@@ -690,6 +690,10 @@ a, input, select, label {
 	    margin-top: 20px;
 	}
 
+	.homepage .row .col-lg-4 img {
+	    width: 100%;
+	}
+
 	.green-invoices .row .col-lg-6 img {
 	    max-width: 300px;
 	}
