@@ -449,6 +449,34 @@ a, input, select, label {
 	margin: 20px 10px;
 }
 
+.reputation .col-lg-4 img:first-child {
+	display: block;
+	margin: 0 auto;
+	margin-top: 25%;
+	margin-bottom: 15%;
+}
+
+.reputation .col-lg-4 img:last-child {
+	display: block;
+	margin: 0 auto;
+	margin-top: 15%;
+	margin-bottom: 25%;
+}
+
+.reputation .col-lg-4 p {
+	margin: 34px 0;
+	font-size: 15px;
+	color: #808080;
+}
+
+.reputation .col-lg-4:last-child p {
+	margin-top: 27px;
+}
+
+.reputation .col-lg-4 img.times {
+    margin-top: 10px;
+} 
+
 .contact-form {
 	background-image: url("../images/maps.png");
 	background-size: cover;
@@ -714,6 +742,20 @@ section.footer .col-lg-6:last-child ul li a {
 @media (max-width: 768px) {
 	.getting-started {
 	    padding: 70px 0;
+	}
+
+	.reputation .col-lg-4 p {
+	    font-size: 11px;
+	}
+
+	.reputation .col-lg-4 img:first-child {
+		margin-top: 12.5%;
+		margin-bottom: 7.5%;
+	}
+
+	.reputation .col-lg-4 img:last-child {
+		margin-top: 7.5%;
+		margin-bottom: 12.5%;
 	}
 
 }
