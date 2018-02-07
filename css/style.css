@@ -615,47 +615,47 @@ a, input, select, label {
 	    border-color: #7bec0a;
 	}
 
-section.footer {
+footer {
 	background-color: #F7F8FA;
 }
 
-section.footer .col-lg-6:first-child img.logo-footer {
+footer .col-lg-6:first-child img.logo-footer {
     margin: 50px 0 30px;
 }
 
-section.footer .col-lg-6:first-child ul {
+footer .col-lg-6:first-child ul {
     padding: 0;
     margin-bottom: 15px;
 }
 
-section.footer .col-lg-6:first-child ul li {
+footer .col-lg-6:first-child ul li {
     display: inline-block;
     margin-right: 15px;
 }
 
-section.footer .col-lg-6:first-child p {
+footer .col-lg-6:first-child p {
     color: #BBBBBB;
 }
 
-section.footer .col-lg-6:last-child ul {
+footer .col-lg-6:last-child ul {
 	float: left;
 	padding: 35px 0;
 	margin-right: 85px;
 }
 
-section.footer .col-lg-6:last-child ul li {
+footer .col-lg-6:last-child ul li {
 	display: block;
     margin: 10px 0;
 }
 
-section.footer .col-lg-6:last-child ul li h3 {
+footer .col-lg-6:last-child ul li h3 {
 	color: #393C41;
 	font-size: 13px;
 	margin-bottom: 15px;
 	text-transform: uppercase;
 }
 
-section.footer .col-lg-6:last-child ul li a {
+footer .col-lg-6:last-child ul li a {
 	color: #6B717B;
 	font-size: 12px;
 }
@@ -733,7 +733,7 @@ section.footer .col-lg-6:last-child ul li a {
 	    top: 125%;
 	}
 
-	section.footer .col-lg-6:last-child ul {
+	footer .col-lg-6:last-child ul {
 	    float: left;
 	    padding: 10px 0;
 	    margin-bottom: 30px;
@@ -748,9 +748,14 @@ section.footer .col-lg-6:last-child ul li a {
 	    margin-top: 10%;
 	}
 
-	.green-invoices img {
+	.green-invoices img.app {
 	    max-width: 350px;
 	    width: 100%;
+	}
+
+	.green-invoices img.buttons {
+	    max-width: 150px;
+		width: 100%;
 	}
 
 	.getting-started {
