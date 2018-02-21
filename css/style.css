@@ -104,7 +104,7 @@ a, input, select, label {
 .homepage .row .col-lg-8 h1 {
 	font-size: 42px;
 	color: black;
-	margin-top: 150px;
+	margin-top: 16%;
 }
 
 .homepage .row .col-lg-8 h3 {
@@ -152,19 +152,19 @@ a, input, select, label {
 	  color: #BABABA;
 	}
 
-		.homepage .row .col-lg-8 input:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		.homepage .row .col-lg-8 input:focus::-webkit-input-placeholder, .getting-started .row .col-lg-6 form input[type="email"]:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 		  color: #e4e4e4;
 		}
 
-		.homepage .row .col-lg-8 input:focus::-moz-placeholder { /* Firefox 19+ */
+		.homepage .row .col-lg-8 input:focus::-moz-placeholder, getting-started .row .col-lg-6 form input[type="email"]:focus::-moz-input-placeholder { /* Firefox 19+ */
 		  color: #e4e4e4;
 		}
 
-		.homepage .row .col-lg-8 input:focus:-ms-input-placeholder { /* IE 10+ */
+		.homepage .row .col-lg-8 input:focus:-ms-input-placeholder, getting-started .row .col-lg-6 form input[type="email"]:focus:-ms-input-placeholder { /* IE 10+ */
 		  color: #e4e4e4;
 		}
 
-		.homepage .row .col-lg-8 input:focus:-moz-placeholder { /* Firefox 18- */
+		.homepage .row .col-lg-8 input:focus:-moz-placeholder, getting-started .row .col-lg-6 form input[type="email"]:-moz-placeholder { /* Firefox 18- */
 		  color: #e4e4e4;
 		}
 
@@ -197,13 +197,13 @@ a, input, select, label {
 
 .homepage .row .col-lg-4 img {
     float: right;
-    margin-top: 80px;
+    margin-top: 20%;
+    margin-bottom: 20%;
     margin-left: -2px;
 }
 
 .blue-banner {
 	background-color: #0FBEFF;
-	margin-top: 160px;
 }
 
 .blue-banner .row .col-lg-4 {
@@ -229,20 +229,40 @@ a, input, select, label {
 	height: 0;
 }
 
-.video iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
+.video video {
 	width: 100%;
-	height: 100%;
+}
+
+.vjs-big-play-button {
+	background-image: url("../images/playblue.png");
+      background-color: transparent;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-size: 46px;
+      background-position: 50% calc(50% - 10px);
+      border: none !important; // @stylint ignore
+      box-shadow: none !important; // @stylint ignore
+      &:before {
+        content: "";
+        display: none;
+      }
+      &:hover {
+        background-color: transparent;
+        opacity: .7;
+      }
 }
 
 .video h1 {
     position: absolute;
     color: white;
-    font-size: 42px;
+    font-size: 4vw;
     left: 50%;
-    top: 20%;
+    top: 18%;
     letter-spacing: -0.4px;
     transform: translate(-50%, -50%);
 }
@@ -276,7 +296,6 @@ a, input, select, label {
 	color: #242E38;
 	letter-spacing: 0;
 	line-height: 35px;
-	margin-bottom: 100px;
 }
 
 	.stocks .row .col-lg-7 a.btn-warning:hover { 
@@ -362,24 +381,25 @@ a, input, select, label {
 
 .reviews {
 	background-color: #0FBEFF;
+	padding: 8% 0;
 }
 
 .reviews h1 {
 	color: #ffffff;
 	font-size: 36px;
-	padding: 30px 0 0;
+    margin: 0;
 }
 
 .reviews h3 {
 	color: #ffffff;
 	font-size: 18px;
-	margin-bottom: 20px;
+	margin-bottom: 8%;
     margin-top: 10px;
 }
 
 .reviews #myCarousel .carousel-inner {
     margin: 0 auto;
-    max-width: 760px;
+    max-width: 770px;
     background: white;
 }
 
@@ -416,7 +436,8 @@ a, input, select, label {
 .reviews p {
 	color: white;
 	font-size: 15px;
-	padding: 50px 0;
+    margin: 0;
+    padding: 8% 0 0;
 }
 
 .reviews p span img {
@@ -496,9 +517,8 @@ a, input, select, label {
   font-size: 14px;
   display: inline-block;
   text-decoration: none;
-  padding: 7px 14px;
   color: #fff;
-  margin: 50px 0 0 0;
+  margin: 6%;
   background-color: transparent;
   -webkit-transform: translateY(-200px);
   -ms-transform: translateY(-200px);
@@ -803,25 +823,37 @@ footer .col-lg-6:last-child ul li a {
 }
 
 @media (max-width: 992px) {
-	.stocks .row .col-lg-5 img, .secured-money .row .col-lg-5 img, .secured-money .row .col-lg-7 h1 {
-        margin-bottom: 50px;
+	.secured-money .row .col-lg-5 img {
+		margin: 0 auto;
+	    margin-top: 8%;
         max-width: 230px;
 	}
 
-	.stocks .row .col-lg-7 a.btn-warning {
-		margin-bottom: 0;
+	.stocks .row .col-lg-5 img {
+		margin: 0 auto;
+	    margin-bottom: 50px;
+        max-width: 230px;
 	}
 
-	.stocks .row .col-lg-7 h1, .green-invoices .row .col-lg-6 h1, .secured-money .row .col-lg-7 h1 {
+	.secured-money .row .col-lg-7 img {
+		margin: 0 auto;
+        max-width: 230px;
+	}
+
+	.stocks .row .col-lg-7 h1, .green-invoices .row .col-lg-6 h1, .secured-money .row .col-lg-7 h1, .pictures .row h1, .reviews h1, .contact-form form h1, .getting-started h1 {
 	    font-size: 30px;
+	}
+
+	.green-invoices .container {
+	   padding: 8% 15px;
+	} 
+
+	.green-invoices .row .col-lg-6:first-child img {
+	    margin-top: 0;
 	}
 	
 	.stocks .row .col-lg-7 p, .green-invoices .row .col-lg-6 p, .secured-money .row .col-lg-7 p {
 	    font-size: 18px;
-	}
-
-	.secured-money .row .col-lg-5 img {
-		margin-bottom: 50px;
 	}
 
 	.secured-money .row .col-lg-7 a.btn-warning {
@@ -833,13 +865,8 @@ footer .col-lg-6:last-child ul li a {
 	}
 
 	.green-invoices .row .col-lg-6:first-child img {
-		margin-top: 0;		
-	    max-width: 260px;
-	}
-
-	.getting-started .row .col-lg-6 form {
-	    width: auto;
-	    height: auto;
+	    margin-bottom: 50px;
+    	max-width: 300px;
 	}
 
 	.getting-started .row .col-lg-6 form input[type="submit"] {
@@ -847,8 +874,8 @@ footer .col-lg-6:last-child ul li a {
 	    left: 0;
 	}
 
-	.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
-	    top: 125%;
+	.reviews #myCarousel .carousel-control {
+		top: 114%;
 	}
 
 	footer .col-lg-6:last-child ul {
@@ -876,8 +903,18 @@ footer .col-lg-6:last-child ul li a {
 		width: 100%;
 	}
 
+	.stocks .row .col-lg-7 h1, .green-invoices .row .col-lg-6 h1, .secured-money .row .col-lg-7 h1 {
+		line-height: 1.5;
+	}
+
 	.getting-started {
 	    padding: 70px 0;
+	    text-align: center;
+	}
+
+	.getting-started .row .col-lg-6 form {
+	    margin: 0 auto;
+        max-width: 400px;
 	}
 
 	.reputation .col-lg-4 p {
@@ -909,8 +946,8 @@ footer .col-lg-6:last-child ul li a {
 	    font-size: 30px;
 	}
 
-	.homepage .row .col-lg-8 h3 {
-	    font-size: 15px;
+	.homepage .row .col-lg-8 h3, input, a {
+	    font-size: 15px !important;
 	}
 
 	.homepage .row .col-lg-8 a.btn-success {
@@ -918,21 +955,15 @@ footer .col-lg-6:last-child ul li a {
 	}
 
 	.homepage .row .col-lg-4 img {
-	    width: 100%;
+        max-width: 350px;
 	}
 
 	.stocks img, .secured-money img {
 	    max-width: 230px;
-	    margin-top: 50px;
-	}
-
-	.green-invoices .row .col-lg-6 h1 {
-	    margin-top: 50px;
 	}
 
 	.green-invoices .row .col-lg-6:first-child img {
 	    max-width: 250px;
-	    margin-top: 50px;
 	}
 
 	.contact-form form {
@@ -941,28 +972,6 @@ footer .col-lg-6:last-child ul li a {
 
 	.getting-started {
 	    padding: 70px 0;
-	}
-
-	.getting-started .row .col-lg-6 form {
-	    width: auto;
-	    height: auto;
-	    border-radius: 0;
-	    text-align: center;
-	}
-
-	.getting-started .row .col-lg-6 form input[type="email"] {
-	    float: none;
-	}
-
-	.getting-started .row .col-lg-6 form input[type="submit"] {
-	    float: none;
-	    left: 0;
-	    display: block;
-	    margin: 0 auto;
-	}
-
-	.reviews h1 {
-	    padding: 30px 0;
 	}
 
 	.pictures .row img {
@@ -982,14 +991,13 @@ footer .col-lg-6:last-child ul li a {
 }
 
 @media (max-width: 475px) {
+
 	.stocks .row .col-lg-7 h1 {
 	    margin-top: 50px;
 	}
 
 	.green-invoices .row .col-lg-6 a {
-	    display: block;
 	    text-align: center;
-	    margin-bottom: 15px;
 	}
 
 	.reviews h1 {
@@ -999,9 +1007,67 @@ footer .col-lg-6:last-child ul li a {
 	.reviews p {
 	    font-size: 15px;
 	}
+
+	.getting-started {
+		padding: 0;
+	}
+
+	.getting-started .container {
+		padding: 8% 0;
+	}
+
+	.getting-started .row .col-lg-6 form input[type="email"] {
+	    float: none;
+	    width: 100%;
+	    text-align: left;
+	}
+
+	.getting-started .row .col-lg-6 form input[type="submit"] {
+	    position: static;
+	    margin-top: 20px;
+	    width: 100%;
+	    float: none;
+	}
+
+	.getting-started .row .col-lg-6 form {
+	    margin: 0 auto;
+	    width: 100%;
+	    max-width: none;
+	    position: relative;
+	    height: auto;
+        overflow: initial;
+        background: transparent;
+        box-shadow: none;
+	}
+
+	.stocks .row .col-lg-5 img, .secured-money .row .col-lg-5 img {
+	    max-width: 200px;
+	}
+
+	.secured-money .row .col-lg-5 img {
+	    margin-bottom: 0;
+	}
+
+	.reviews #myCarousel .carousel-inner h2 {
+	    font-size: 15px;
+	    color: #9B9B9B;
+	    letter-spacing: 0.25px;
+	    margin-top: 30px;
+	}
+
 }
 
+@media (max-width: 374px) {
+	.homepage .row .col-lg-4 img {
+	    max-width: 280px;
+	}
 
+	.green-invoices img.buttons {
+	    max-width: 125px;
+		width: 100%;
+	}
+
+}
 
 
 
