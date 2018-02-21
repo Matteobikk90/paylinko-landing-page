@@ -224,12 +224,18 @@ a, input, select, label {
 }
 
 .video {
-	position: relative;
-	padding-bottom: 56.25%;
 	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
 }
 
-.video video {
+.video iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
 	width: 100%;
 }
 
@@ -852,7 +858,7 @@ footer .col-lg-6:last-child ul li a {
 	    margin-top: 0;
 	}
 	
-	.stocks .row .col-lg-7 p, .green-invoices .row .col-lg-6 p, .secured-money .row .col-lg-7 p {
+	.stocks .row .col-lg-7 p, .green-invoices .row .col-lg-6 p:nth-child(2), .secured-money .row .col-lg-7 p {
 	    font-size: 18px;
 	}
 
